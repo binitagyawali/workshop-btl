@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+{{ post.title }}
+<p>{{ post.body }}</p>
+{{ post.author }}<br>
+{{ post.created }}<br>
+
+<a href="{% url 'edit_post' post.pk %}">Edit</a>
+</body>
+</html>
